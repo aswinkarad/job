@@ -174,10 +174,10 @@
             left: -20%;
         }
 
-        /* Building Your Future Section Styling */
+        /* Updated Building Your Future Section Styling */
         .future-section {
-            padding: 60px 0;
-            background: #fff;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
         }
 
         .future-content {
@@ -185,35 +185,106 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         .future-text {
             flex: 1;
-            padding: 20px;
+            padding: 30px;
+            min-width: 300px;
         }
 
         .future-text h2 {
-            font-size: 36px;
+            font-size: 40px;
             font-weight: 700;
             color: #222;
             margin-bottom: 20px;
+            line-height: 1.2;
         }
 
         .future-text p {
-            font-size: 16px;
-            color: #666;
+            font-size: 18px;
+            color: #555;
             line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .future-text .cta-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .future-text .cta-btn:hover {
+            background: linear-gradient(135deg, #00d4ff, #007bff);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
         }
 
         .future-image {
             flex: 1;
-            padding: 20px;
+            padding: 30px;
+            min-width: 300px;
         }
 
         .future-image img {
             width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .future-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .future-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .future-text, .future-image {
+                padding: 20px;
+                width: 100%;
+            }
+
+            .future-text h2 {
+                font-size: 32px;
+            }
+
+            .future-text p {
+                font-size: 16px;
+            }
+
+            .future-image img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .future-text h2 {
+                font-size: 28px;
+            }
+
+            .future-text p {
+                font-size: 14px;
+            }
+
+            .future-text .cta-btn {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -242,7 +313,9 @@
     <!-- Navbar from Galaxy Enterprises -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">GALAXY <span>ENTERPRISES</span></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/Frame 51.png" alt="Galaxy Enterprises Logo" style="max-height: 100px; width: auto;">
+            </a>
             <form action="#" class="searchform order-sm-start order-lg-last">
                 <div class="form-group d-flex">
                     <input type="text" class="form-control pl-3" placeholder="Search">
@@ -437,7 +510,7 @@
         </div>
     </section>
 
-    <!-- Building Your Future Section -->
+    <!-- Updated Building Your Future Section -->
     <section class="future-section">
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
@@ -448,7 +521,8 @@
             <div class="future-content">
                 <div class="future-text">
                     <h2>Your Future Starts Here</h2>
-                    <p>We are proud to offer you our services. We can find the candidate you are looking for, no matter how specific their requirements. Our team is dedicated to connecting talent with opportunity, ensuring a perfect match every time.</p>
+                    <p>We are proud to offer you our services. Whether you're an employer seeking the perfect candidate or an individual looking for your dream job, we’ve got you covered. Our team is dedicated to connecting talent with opportunity, ensuring a seamless and successful journey every time.</p>
+                    <a href="contact.html" class="cta-btn">Get Started Today</a>
                 </div>
                 <div class="future-image">
                     <img src="https://ziapy.com/wp-content/uploads/2023/08/Job-interview-questions-to-ask-.jpg" alt="Building Your Future">
@@ -479,14 +553,10 @@
                         </div>
                         <div class="col-md-4 mb-md-0 mb-4">
                             <h2 class="footer-heading">Our Locations</h2>
-                            <p><strong>Kochi:</strong><br>
-                                Pulimuootil Arcade, 2nd Floor,<br>
-                                NH-47 Bypass, Near Prestige TMS Square,<br>
-                                Edapally South, Kochi, Kerala - 682024</p>
-                            <p><strong>Thiruvananthapuram:</strong><br>
-                                Springs Building, TC/44/913/1, Floor No. 1,<br>
-                                Edappazhanji, Vazhuthacaud,<br>
-                                Thiruvananthapuram, Kerala - 695014</p>
+                            <p><strong>Calicut</strong><br>
+                               H.O: 13/1125 to 13/1127, PMK Tower, 2nd Floor,<br>
+                                Civil Station (P.O),  - 673020
+                            </p>
                         </div>
                     </div>
                     <div class="row mt-md-5">

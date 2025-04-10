@@ -13,52 +13,267 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom CSS for About Section -->
+    <style>
+      /* General Section Styling */
+      .ftco-section {
+        padding: 80px 0;
+        background: #f8f9fa;
+      }
+
+      .container {
+        max-width: 1200px;
+      }
+
+      .heading-section h2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 10px;
+      }
+
+      .heading-section .subheading {
+        font-size: 18px;
+        color: #007bff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      /* About Section Styling */
+      .about-content {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .about-content:hover {
+        transform: translateY(-10px);
+      }
+
+      .about-image {
+        flex: 1;
+        min-width: 300px;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s ease;
+      }
+
+      .about-content:hover .about-image {
+        transform: scale(1.05);
+      }
+
+      .about-text {
+        flex: 1;
+        padding: 40px;
+        min-width: 300px;
+      }
+
+      .about-text h3 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .about-text h3::after {
+        content: '';
+        width: 50px;
+        height: 3px;
+        background: #007bff;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
+
+      .about-text p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 15px;
+      }
+
+      .about-text p strong {
+        color: #222;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column;
+          margin-bottom: 30px;
+        }
+
+        .about-image {
+          height: 300px;
+          width: 100%;
+        }
+
+        .about-text {
+          padding: 30px;
+        }
+
+        .heading-section h2 {
+          font-size: 32px;
+        }
+
+        .heading-section .subheading {
+          font-size: 16px;
+        }
+
+        .about-text h3 {
+          font-size: 24px;
+        }
+
+        .about-text p {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .ftco-section {
+          padding: 60px 0;
+        }
+
+        .about-image {
+          height: 250px;
+        }
+
+        .about-text {
+          padding: 20px;
+        }
+
+        .heading-section h2 {
+          font-size: 28px;
+        }
+
+        .heading-section .subheading {
+          font-size: 14px;
+        }
+
+        .about-text h3 {
+          font-size: 20px;
+        }
+
+        .about-text h3::after {
+          width: 40px;
+        }
+      }
+
+      /* Footer Styling */
+      .footer {
+        background: #222;
+        color: #fff;
+        padding: 40px 0;
+      }
+
+      .footer-heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      .footer p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .ftco-footer-social li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .ftco-footer-social a {
+        color: #fff;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+
+      .ftco-footer-social a:hover {
+        color: #007bff;
+      }
+
+      .form-consultation .form-control {
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      .form-consultation .submit {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        transition: background 0.3s ease;
+      }
+
+      .form-consultation .submit:hover {
+        background: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .footer .row > div {
+          margin-bottom: 30px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Header from Galaxy Enterprises -->
     <div class="wrap">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col">
-                    <p class="mb-0 phone"><span class="fa fa-phone"></span> <a href="#">+91 85901 72642</a></p>
-                </div>
-                <div class="col d-flex justify-content-end">
-                    <div class="social-media">
-                        <p class="mb-0 d-flex">
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p class="mb-0 phone"><span class="fa fa-phone"></span> <a href="#">+91 85901 72642</a></p>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <div class="social-media">
+              <p class="mb-0 d-flex">
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Navbar from Galaxy Enterprises -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">GALAXY <span>ENTERPRISES</span></a>
-            <form action="#" class="searchform order-sm-start order-lg-last">
-                <div class="form-group d-flex">
-                    <input type="text" class="form-control pl-3" placeholder="Search">
-                    <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-                </div>
-            </form>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span> Menu
-            </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="job.html" class="nav-link">Job</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/Frame 51.png" alt="Galaxy Enterprises Logo" style="max-height: 100px; width: auto;">
+        </a>
+        <form action="#" class="searchform order-sm-start order-lg-last">
+          <div class="form-group d-flex">
+            <input type="text" class="form-control pl-3" placeholder="Search">
+            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+          </div>
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="job.html" class="nav-link">Job</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- END nav -->
 
@@ -75,7 +290,7 @@
       </div>
     </section>
 
-    <!-- Updated About Section -->
+    <!-- Updated About Section with Side-by-Side Images -->
     <section class="ftco-section bg-light">
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
@@ -84,58 +299,42 @@
             <span class="subheading">About Galaxy Enterprises</span>
           </div>
         </div>
-        <div class="row d-flex no-gutters">
-          <div class="col-md-6 d-flex">
-            <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end mb-4 mb-sm-0" style="background-image:url('images/about.jpg');">
-            </div>
-          </div>
-          <div class="col-md-6 pl-md-5 py-md-5">
-            <div class="text">
-              <p>Our specialty at GALAXY ENTERPRISES is offering complete employment visa solutions that are customized to satisfy the requirements of people and businesses all around the world. Our skilled staff successfully negotiates intricate immigration procedures to provide dependable and effective visa services.</p>
-              <p>We provide individualized advice at every stage, whether you're an individual looking for global career prospects or an organization looking to hire foreign talent. Our dedication to quality, openness, and prompt service will make your journey easier and enable you to fulfill your career goals internationally. Our first goal is your success.</p>
-            </div>
+
+        <!-- Who We Are -->
+        <div class="about-content">
+          <div class="about-image" style="background-image: url('images/about.jpg');"></div>
+          <div class="about-text">
+            <p>Our specialty at GALAXY ENTERPRISES is offering complete employment visa solutions that are customized to satisfy the requirements of people and businesses all around the world. Our skilled staff successfully negotiates intricate immigration procedures to provide dependable and effective visa services.</p>
+            <p>We provide individualized advice at every stage, whether you're an individual looking for global career prospects or an organization looking to hire foreign talent. Our dedication to quality, openness, and prompt service will make your journey easier and enable you to fulfill your career goals internationally. Our first goal is your success.</p>
           </div>
         </div>
 
-        <div class="row d-flex no-gutters mt-5">
-          <div class="col-md-6 pl-md-5 py-md-5 order-md-2">
-            <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-start mb-4 mb-sm-0" style="background-image:url('https://img.freepik.com/premium-photo/why-choose-us_220873-5582.jpg');">
-            </div>
-          </div>
-          <div class="col-md-6 py-md-5 order-md-1">
-            <div class="text">
-              <h3>Why Choose Us?</h3>
-              <p>Galaxy Enterprises Overseas Career Consultant has been providing our clients from all over the world with specialized, expert, and cost-effective immigration services. Our vast expertise working on a variety of international recruitment initiatives sets us apart from the competitors.</p>
-              <p>We specifically seek for workers from Asia, Africa, and the Middle East. Our hires are highly motivated to work and possess a high degree of professional qualifications.</p>
-            </div>
+        <!-- Why Choose Us -->
+        <div class="about-content">
+          <div class="about-image" style="background-image: url('https://img.freepik.com/premium-photo/why-choose-us_220873-5582.jpg');"></div>
+          <div class="about-text">
+            <h3>Why Choose Us?</h3>
+            <p>Galaxy Enterprises Overseas Career Consultant has been providing our clients from all over the world with specialized, expert, and cost-effective immigration services. Our vast expertise working on a variety of international recruitment initiatives sets us apart from the competitors.</p>
+            <p>We specifically seek for workers from Asia, Africa, and the Middle East. Our hires are highly motivated to work and possess a high degree of professional qualifications.</p>
           </div>
         </div>
 
-        <!-- New Our Values Section -->
-        <div class="row d-flex no-gutters mt-5">
-          <div class="col-md-6 d-flex">
-            <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end mb-4 mb-sm-0" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEotXpBZkFJ5bc4rANp3hJluqLNPjW0LLYYA&s');">
-            </div>
-          </div>
-          <div class="col-md-6 pl-md-5 py-md-5">
-            <div class="text">
-              <h3>Our Values</h3>
-              <p>We're strong enough to change things and committed enough to care about others. Our genuine passion and excitement for our work, along with our ability to quickly respond and adjust to client demands, have made us India's leading one-stop recruiting arena for international hiring.</p>
-            </div>
+        <!-- Our Values -->
+        <div class="about-content">
+          <div class="about-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEotXpBZkFJ5bc4rANp3hJluqLNPjW0LLYYA&s');"></div>
+          <div class="about-text">
+            <h3>Our Values</h3>
+            <p>We're strong enough to change things and committed enough to care about others. Our genuine passion and excitement for our work, along with our ability to quickly respond and adjust to client demands, have made us India's leading one-stop recruiting arena for international hiring.</p>
           </div>
         </div>
 
-        <div class="row d-flex no-gutters mt-5">
-          <div class="col-md-6 d-flex">
-            <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end mb-4 mb-sm-0" style="background-image:url('https://t4.ftcdn.net/jpg/00/96/54/53/360_F_96545306_cX6N4Fv2TTVRMKahA3aoCvxlUOGm2KkV.jpg');">
-            </div>
-          </div>
-          <div class="col-md-6 pl-md-5 py-md-5">
-            <div class="text">
-              <h3>Our Mission & Vision</h3>
-              <p><strong>Our Mission:</strong> We close the gap between employers and workers by discovering opportunities or skills using qualified professionals for the economic growth of industries.</p>
-              <p><strong>Our Vision:</strong> We uphold our goal of promoting growth by incremental diversification as a worldwide organization by envisioning ourselves as part of a successful, well-run placement and recruitment program.</p>
-            </div>
+        <!-- Our Mission & Vision -->
+        <div class="about-content">
+          <div class="about-image" style="background-image: url('https://t4.ftcdn.net/jpg/00/96/54/53/360_F_96545306_cX6N4Fv2TTVRMKahA3aoCvxlUOGm2KkV.jpg');"></div>
+          <div class="about-text">
+            <h3>Our Mission & Vision</h3>
+            <p><strong>Our Mission:</strong> We close the gap between employers and workers by discovering opportunities or skills using qualified professionals for the economic growth of industries.</p>
+            <p><strong>Our Vision:</strong> We uphold our goal of promoting growth by incremental diversification as a worldwide organization by envisioning ourselves as part of a successful, well-run placement and recruitment program.</p>
           </div>
         </div>
       </div>
@@ -164,14 +363,10 @@
               </div>
               <div class="col-md-4 mb-md-0 mb-4">
                 <h2 class="footer-heading">Our Locations</h2>
-                <p><strong>Kochi:</strong><br>
-                  Pulimuootil Arcade, 2nd Floor,<br>
-                  NH-47 Bypass, Near Prestige TMS Square,<br>
-                  Edapally South, Kochi, Kerala - 682024</p>
-                <p><strong>Thiruvananthapuram:</strong><br>
-                  Springs Building, TC/44/913/1, Floor No. 1,<br>
-                  Edappazhanji, Vazhuthacaud,<br>
-                  Thiruvananthapuram, Kerala - 695014</p>
+                <p><strong>Calicut</strong><br>
+                  H.O: 13/1125 to 13/1127, PMK Tower, 2nd Floor,<br>
+                  Civil Station (P.O), - 673020
+                </p>
               </div>
             </div>
             <div class="row mt-md-5">
@@ -183,7 +378,7 @@
             </div>
           </div>
           <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
-            <h2 class="footer-heading">Free consultation</h2>
+            <h2 class="footer-heading">Free Consultation</h2>
             <form action="#" class="form-consultation">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
